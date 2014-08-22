@@ -6,55 +6,26 @@ include $(TOP)/configure/CONFIG
 # Build an Diamond Support Module
 # -------------------------------
 
-#LIBRARY_IOC += xxx
+LIBRARY_IOC += stanfordDG645
 
 # xxxRecord.h will be created from xxxRecord.dbd
 #DBDINC += xxx.h
 
 # xxxRecord.dbd will be installed into <top>/dbd
-#DBD += xxx.dbd
+DBD += stanfordDG645.dbd
+
+stanfordDG645_DBD += base.dbd
+stanfordDG645_DBD += stream.dbd
 
 # The following are compiled and added to the support library
 #xxx_SRCS += xxxCodeA.c
 #xxx_SRCS += xxxCodeB.c
 
 # We need to link against the EPICS Base libraries
-#xxx_LIBS += $(EPICS_BASE_IOC_LIBS)
-
-
-# ------------------------
-# Build an IOC Application
-# ------------------------
-
-PROD_IOC = stanfordDG645
-
-# stanfordDG645.dbd will be installed into <top>/dbd
-DBD += stanfordDG645.dbd
-
-# stanfordDG645.dbd will be created from these files
-stanfordDG645_DBD += base.dbd
-#stanfordDG645_DBD += xxx.dbd
-
-# stanfordDG645_registerRecordDeviceDriver.cpp will be created
-# stanfordDG645.dbd
-stanfordDG645_SRCS += stanfordDG645_registerRecordDeviceDriver.cpp
-
-# These two lines are needed for non-vxWorks builds, such as Linux
-stanfordDG645_SRCS_DEFAULT += stanfordDG645Main.cpp
-stanfordDG645_SRCS_vxWorks += -nil-
-
-# Add locally compiled object code
-#stanfordDG645_SRCS +=
-
-# The following adds object code from base/src/vxWorks
-stanfordDG645_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
-
-# This line says that this IOC Application depends on the
-# xxx Support Module
-#stanfordDG645_LIBS += xxx
-
-# We need to link this IOC Application against the EPICS Base libraries
+stanfordDG645_LIBS += asyn
+stanfordDG645_LIBS += stream
 stanfordDG645_LIBS += $(EPICS_BASE_IOC_LIBS)
+
 
 # ---------------------------------------------------
 

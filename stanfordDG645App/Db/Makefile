@@ -13,6 +13,7 @@ include $(TOP)/configure/CONFIG
 #
 #DB += motor.template
 #DB += basic_motor.template
+DB += stanfordDG645.template
 
 #----------------------------------------------------
 # In a Diamond IOC Application, build db files from
