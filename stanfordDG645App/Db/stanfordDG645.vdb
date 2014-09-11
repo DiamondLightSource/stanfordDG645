@@ -3,7 +3,9 @@
 #! DBD("../../dbd/stanfordDG645.dbd")
 #! DBDEND
 
-
+# % macro, P, Device prefix
+# % macro, Q, Device suffix
+# % macro, PORT, Asyn port for device
 record(ao, "$(P)$(Q):AB:DELAY") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
