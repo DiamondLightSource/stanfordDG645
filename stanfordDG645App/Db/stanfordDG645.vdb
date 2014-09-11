@@ -3,22 +3,6 @@
 #! DBD("../../dbd/stanfordDG645.dbd")
 #! DBDEND
 
-# % macro, P,    PV name prefix
-# % macro, Q,    PV name prefix
-# % macro, PORT, asyn name for serial port connected to device
-# % macro, name, name
-# % gui, $(name=), edm, stanfordDG645.edl, P=$(P), Q=$(Q)
-# % gui, $(name=), sevr
-
-record(bo, "$(P)$(Q):REMOTE") {
-  field(SCAN, "Passive")
-  field(DTYP, "stream")
-  field(OMSL, "supervisory")
-  field(OUT, "@stanfordDG645.proto setRemote $(PORT)")
-  field(ZNAM, "Local")
-  field(ONAM, "Remote")
-  field(ZSV, "MINOR")
-}
 
 record(ao, "$(P)$(Q):AB:DELAY") {
   field(SCAN, "Passive")
@@ -148,11 +132,21 @@ record(ai, "$(P)$(Q):GH:WIDTH_RBV") {
   field(EGU, "s")
 }
 
-
 #! Further lines contain data used by VisualDCT
-#! View(2000,2115,1.0)
-#! Record("$(P)$(Q)REMOTE",2260,2146,0,1,"$(P)$(Q):REMOTE")
-#! Record("$(P)$(Q)AB:DELAY",2240,2354,0,1,"$(P)$(Q):AB:DELAY")
-#! Record("$(P)$(Q)AB:WIDTH",2440,2354,0,1,"$(P)$(Q):AB:WIDTH")
-#! Record("$(P)$(Q)AB:DELAY_RBV",2240,2514,0,1,"$(P)$(Q):AB:DELAY_RBV")
-#! Record("$(P)$(Q)AB:WIDTH_RBV",2440,2514,0,1,"$(P)$(Q):AB:WIDTH_RBV")
+#! View(3245,0,1.0)
+#! Record("$(P)$(Q):AB:DELAY",260,14,0,0,"$(P)$(Q):AB:DELAY")
+#! Record("$(P)$(Q):AB:WIDTH",500,14,0,0,"$(P)$(Q):AB:WIDTH")
+#! Record("$(P)$(Q):AB:DELAY_RBV",740,14,0,0,"$(P)$(Q):AB:DELAY_RBV")
+#! Record("$(P)$(Q):AB:WIDTH_RBV",980,14,0,0,"$(P)$(Q):AB:WIDTH_RBV")
+#! Record("$(P)$(Q):CD:DELAY",1220,14,0,0,"$(P)$(Q):CD:DELAY")
+#! Record("$(P)$(Q):CD:WIDTH",1460,14,0,0,"$(P)$(Q):CD:WIDTH")
+#! Record("$(P)$(Q):CD:DELAY_RBV",1700,14,0,0,"$(P)$(Q):CD:DELAY_RBV")
+#! Record("$(P)$(Q):CD:WIDTH_RBV",1940,14,0,0,"$(P)$(Q):CD:WIDTH_RBV")
+#! Record("$(P)$(Q):EF:DELAY",2180,14,0,0,"$(P)$(Q):EF:DELAY")
+#! Record("$(P)$(Q):EF:WIDTH",2420,14,0,0,"$(P)$(Q):EF:WIDTH")
+#! Record("$(P)$(Q):EF:DELAY_RBV",2660,14,0,0,"$(P)$(Q):EF:DELAY_RBV")
+#! Record("$(P)$(Q):EF:WIDTH_RBV",2900,14,0,0,"$(P)$(Q):EF:WIDTH_RBV")
+#! Record("$(P)$(Q):GH:DELAY",3140,14,0,0,"$(P)$(Q):GH:DELAY")
+#! Record("$(P)$(Q):GH:WIDTH",3380,14,0,0,"$(P)$(Q):GH:WIDTH")
+#! Record("$(P)$(Q):GH:DELAY_RBV",3620,14,0,0,"$(P)$(Q):GH:DELAY_RBV")
+#! Record("$(P)$(Q):GH:WIDTH_RBV",3860,14,0,0,"$(P)$(Q):GH:WIDTH_RBV")
