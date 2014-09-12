@@ -39,7 +39,7 @@ fontAlign "center"
 fgColor index 14
 bgColor index 51
 value {
-  "Stanford DG645 $(P)$(Q)"
+  "Stanford DG645 $(P)"
 }
 endObjectProperties
 
@@ -127,7 +127,7 @@ x 384
 y 64
 w 88
 h 24
-controlPv "$(P)$(Q):AB:WIDTH_RBV"
+controlPv "$(P):AB:WIDTH_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -149,7 +149,7 @@ x 288
 y 64
 w 88
 h 24
-controlPv "$(P)$(Q):AB:WIDTH"
+controlPv "$(P):AB:WIDTH"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -264,7 +264,7 @@ x 72
 y 64
 w 88
 h 24
-controlPv "$(P)$(Q):AB:DELAY"
+controlPv "$(P):AB:DELAY"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -285,7 +285,7 @@ x 168
 y 64
 w 88
 h 24
-controlPv "$(P)$(Q):AB:DELAY_RBV"
+controlPv "$(P):AB:DELAY_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -307,7 +307,7 @@ x 72
 y 96
 w 88
 h 24
-controlPv "$(P)$(Q):CD:DELAY"
+controlPv "$(P):CD:DELAY"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -328,7 +328,7 @@ x 168
 y 96
 w 88
 h 24
-controlPv "$(P)$(Q):CD:DELAY_RBV"
+controlPv "$(P):CD:DELAY_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -350,7 +350,7 @@ x 72
 y 128
 w 88
 h 24
-controlPv "$(P)$(Q):EF:DELAY"
+controlPv "$(P):EF:DELAY"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -371,7 +371,7 @@ x 168
 y 128
 w 88
 h 24
-controlPv "$(P)$(Q):EF:DELAY_RBV"
+controlPv "$(P):EF:DELAY_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -393,7 +393,7 @@ x 72
 y 160
 w 88
 h 24
-controlPv "$(P)$(Q):GH:DELAY"
+controlPv "$(P):GH:DELAY"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -414,7 +414,7 @@ x 168
 y 160
 w 88
 h 24
-controlPv "$(P)$(Q):GH:DELAY_RBV"
+controlPv "$(P):GH:DELAY_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -496,7 +496,7 @@ x 384
 y 96
 w 88
 h 24
-controlPv "$(P)$(Q):CD:WIDTH_RBV"
+controlPv "$(P):CD:WIDTH_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -518,7 +518,7 @@ x 288
 y 96
 w 88
 h 24
-controlPv "$(P)$(Q):CD:WIDTH"
+controlPv "$(P):CD:WIDTH"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -539,7 +539,7 @@ x 384
 y 128
 w 88
 h 24
-controlPv "$(P)$(Q):EF:WIDTH_RBV"
+controlPv "$(P):EF:WIDTH_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -561,7 +561,7 @@ x 288
 y 128
 w 88
 h 24
-controlPv "$(P)$(Q):EF:WIDTH"
+controlPv "$(P):EF:WIDTH"
 displayMode "exp"
 precision 2
 fgColor index 25
@@ -582,7 +582,7 @@ x 384
 y 160
 w 88
 h 24
-controlPv "$(P)$(Q):GH:WIDTH_RBV"
+controlPv "$(P):GH:WIDTH_RBV"
 displayMode "exp"
 precision 4
 fgColor index 16
@@ -604,7 +604,7 @@ x 288
 y 160
 w 88
 h 24
-controlPv "$(P)$(Q):GH:WIDTH"
+controlPv "$(P):GH:WIDTH"
 displayMode "exp"
 precision 2
 fgColor index 25

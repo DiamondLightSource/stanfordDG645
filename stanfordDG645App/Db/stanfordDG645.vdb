@@ -3,10 +3,9 @@
 #! DBD("../../dbd/stanfordDG645.dbd")
 #! DBDEND
 
-# % macro, P, Device prefix
-# % macro, Q, Device suffix
+# % macro, P, Device name
 # % macro, PORT, Asyn port for device
-record(ao, "$(P)$(Q):AB:DELAY") {
+record(ao, "$(P):AB:DELAY") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(2,0) $(PORT)")
@@ -14,7 +13,7 @@ record(ao, "$(P)$(Q):AB:DELAY") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):AB:WIDTH") {
+record(ao, "$(P):AB:WIDTH") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(3,2) $(PORT)")
@@ -22,7 +21,7 @@ record(ao, "$(P)$(Q):AB:WIDTH") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):AB:DELAY_RBV") {
+record(ai, "$(P):AB:DELAY_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(2) $(PORT)")
@@ -30,7 +29,7 @@ record(ai, "$(P)$(Q):AB:DELAY_RBV") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):AB:WIDTH_RBV") {
+record(ai, "$(P):AB:WIDTH_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(3) $(PORT)")
@@ -38,7 +37,7 @@ record(ai, "$(P)$(Q):AB:WIDTH_RBV") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):CD:DELAY") {
+record(ao, "$(P):CD:DELAY") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(4,0) $(PORT)")
@@ -46,7 +45,7 @@ record(ao, "$(P)$(Q):CD:DELAY") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):CD:WIDTH") {
+record(ao, "$(P):CD:WIDTH") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(5,4) $(PORT)")
@@ -54,7 +53,7 @@ record(ao, "$(P)$(Q):CD:WIDTH") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):CD:DELAY_RBV") {
+record(ai, "$(P):CD:DELAY_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(4) $(PORT)")
@@ -62,7 +61,7 @@ record(ai, "$(P)$(Q):CD:DELAY_RBV") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):CD:WIDTH_RBV") {
+record(ai, "$(P):CD:WIDTH_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(5) $(PORT)")
@@ -70,7 +69,7 @@ record(ai, "$(P)$(Q):CD:WIDTH_RBV") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):EF:DELAY") {
+record(ao, "$(P):EF:DELAY") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(6,0) $(PORT)")
@@ -78,7 +77,7 @@ record(ao, "$(P)$(Q):EF:DELAY") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):EF:WIDTH") {
+record(ao, "$(P):EF:WIDTH") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(7,6) $(PORT)")
@@ -86,7 +85,7 @@ record(ao, "$(P)$(Q):EF:WIDTH") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):EF:DELAY_RBV") {
+record(ai, "$(P):EF:DELAY_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(6) $(PORT)")
@@ -94,7 +93,7 @@ record(ai, "$(P)$(Q):EF:DELAY_RBV") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):EF:WIDTH_RBV") {
+record(ai, "$(P):EF:WIDTH_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(7) $(PORT)")
@@ -102,7 +101,7 @@ record(ai, "$(P)$(Q):EF:WIDTH_RBV") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):GH:DELAY") {
+record(ao, "$(P):GH:DELAY") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(8,0) $(PORT)")
@@ -110,7 +109,7 @@ record(ao, "$(P)$(Q):GH:DELAY") {
   field(EGU, "s")
 }
 
-record(ao, "$(P)$(Q):GH:WIDTH") {
+record(ao, "$(P):GH:WIDTH") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(OUT, "@stanfordDG645.proto setDelay(9,8) $(PORT)")
@@ -118,7 +117,7 @@ record(ao, "$(P)$(Q):GH:WIDTH") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):GH:DELAY_RBV") {
+record(ai, "$(P):GH:DELAY_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(8) $(PORT)")
@@ -126,7 +125,7 @@ record(ai, "$(P)$(Q):GH:DELAY_RBV") {
   field(EGU, "s")
 }
 
-record(ai, "$(P)$(Q):GH:WIDTH_RBV") {
+record(ai, "$(P):GH:WIDTH_RBV") {
   field(SCAN, "1 second")
   field(DTYP, "stream")
   field(INP, "@stanfordDG645.proto getDelay(9) $(PORT)")
@@ -136,19 +135,19 @@ record(ai, "$(P)$(Q):GH:WIDTH_RBV") {
 
 #! Further lines contain data used by VisualDCT
 #! View(3245,0,1.0)
-#! Record("$(P)$(Q):AB:DELAY",260,14,0,0,"$(P)$(Q):AB:DELAY")
-#! Record("$(P)$(Q):AB:WIDTH",500,14,0,0,"$(P)$(Q):AB:WIDTH")
-#! Record("$(P)$(Q):AB:DELAY_RBV",740,14,0,0,"$(P)$(Q):AB:DELAY_RBV")
-#! Record("$(P)$(Q):AB:WIDTH_RBV",980,14,0,0,"$(P)$(Q):AB:WIDTH_RBV")
-#! Record("$(P)$(Q):CD:DELAY",1220,14,0,0,"$(P)$(Q):CD:DELAY")
-#! Record("$(P)$(Q):CD:WIDTH",1460,14,0,0,"$(P)$(Q):CD:WIDTH")
-#! Record("$(P)$(Q):CD:DELAY_RBV",1700,14,0,0,"$(P)$(Q):CD:DELAY_RBV")
-#! Record("$(P)$(Q):CD:WIDTH_RBV",1940,14,0,0,"$(P)$(Q):CD:WIDTH_RBV")
-#! Record("$(P)$(Q):EF:DELAY",2180,14,0,0,"$(P)$(Q):EF:DELAY")
-#! Record("$(P)$(Q):EF:WIDTH",2420,14,0,0,"$(P)$(Q):EF:WIDTH")
-#! Record("$(P)$(Q):EF:DELAY_RBV",2660,14,0,0,"$(P)$(Q):EF:DELAY_RBV")
-#! Record("$(P)$(Q):EF:WIDTH_RBV",2900,14,0,0,"$(P)$(Q):EF:WIDTH_RBV")
-#! Record("$(P)$(Q):GH:DELAY",3140,14,0,0,"$(P)$(Q):GH:DELAY")
-#! Record("$(P)$(Q):GH:WIDTH",3380,14,0,0,"$(P)$(Q):GH:WIDTH")
-#! Record("$(P)$(Q):GH:DELAY_RBV",3620,14,0,0,"$(P)$(Q):GH:DELAY_RBV")
-#! Record("$(P)$(Q):GH:WIDTH_RBV",3860,14,0,0,"$(P)$(Q):GH:WIDTH_RBV")
+#! Record("$(P):AB:DELAY",260,14,0,0,"$(P):AB:DELAY")
+#! Record("$(P):AB:WIDTH",500,14,0,0,"$(P):AB:WIDTH")
+#! Record("$(P):AB:DELAY_RBV",740,14,0,0,"$(P):AB:DELAY_RBV")
+#! Record("$(P):AB:WIDTH_RBV",980,14,0,0,"$(P):AB:WIDTH_RBV")
+#! Record("$(P):CD:DELAY",1220,14,0,0,"$(P):CD:DELAY")
+#! Record("$(P):CD:WIDTH",1460,14,0,0,"$(P):CD:WIDTH")
+#! Record("$(P):CD:DELAY_RBV",1700,14,0,0,"$(P):CD:DELAY_RBV")
+#! Record("$(P):CD:WIDTH_RBV",1940,14,0,0,"$(P):CD:WIDTH_RBV")
+#! Record("$(P):EF:DELAY",2180,14,0,0,"$(P):EF:DELAY")
+#! Record("$(P):EF:WIDTH",2420,14,0,0,"$(P):EF:WIDTH")
+#! Record("$(P):EF:DELAY_RBV",2660,14,0,0,"$(P):EF:DELAY_RBV")
+#! Record("$(P):EF:WIDTH_RBV",2900,14,0,0,"$(P):EF:WIDTH_RBV")
+#! Record("$(P):GH:DELAY",3140,14,0,0,"$(P):GH:DELAY")
+#! Record("$(P):GH:WIDTH",3380,14,0,0,"$(P):GH:WIDTH")
+#! Record("$(P):GH:DELAY_RBV",3620,14,0,0,"$(P):GH:DELAY_RBV")
+#! Record("$(P):GH:WIDTH_RBV",3860,14,0,0,"$(P):GH:WIDTH_RBV")
