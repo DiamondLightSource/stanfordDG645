@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<components arch="linux-x86">
+<components arch="linux-x86_64">
 	<asyn.AsynIP name="DG645port" port="127.0.0.1:9015"/>
 	<stanfordDG645.stanfordDG645 P="DG645test" PORT="DG645port"/>
 </components>
