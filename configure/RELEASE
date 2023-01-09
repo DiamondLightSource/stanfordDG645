@@ -24,8 +24,8 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 SUPPORT= /dls_sw/prod/R3.14.12.7/support
 WORK=    /dls_sw/work/R3.14.12.7/support
 
-ASYN= $(SUPPORT)/asyn/4-34
-STREAMS= $(SUPPORT)/streamDevice/2-5dls11
+ASYN= $(SUPPORT)/asyn/4-41
+STREAMS= $(SUPPORT)/streamDevice/2-5dls13
 
 # If using the sequencer, point SNCSEQ at its top directory:
 #SNCSEQ=$(EPICS_BASE)/../modules/soft/seq
