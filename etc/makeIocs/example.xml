@@ -2,4 +2,8 @@
 <components arch="linux-x86_64">
 	<asyn.AsynIP name="DG645port" port="127.0.0.1:9015"/>
 	<stanfordDG645.stanfordDG645 P="DG645test" PORT="DG645port"/>
+	<stanfordDG645.stanfordDG645Channel P="DG645test" PORT="DG645port" CH="AB" LEAD="2" TRAIL="3" PRESC="1"/>
+	<stanfordDG645.stanfordDG645Channel P="DG645test" PORT="DG645port" CH="CD" LEAD="4" TRAIL="5" PRESC="2"/>
+	<stanfordDG645.stanfordDG645Channel P="DG645test" PORT="DG645port" CH="EF" LEAD="6" TRAIL="7" PRESC="3"/>
+	<stanfordDG645.stanfordDG645Channel P="DG645test" PORT="DG645port" CH="GH" LEAD="8" TRAIL="9" PRESC="4"/>
 </components>
