@@ -14,6 +14,8 @@ include $(TOP)/configure/CONFIG
 #DB += motor.template
 #DB += basic_motor.template
 DB += stanfordDG645.template
+DB += stanfordDG645Channel.template
+DB += stanfordDG645Output.template
 
 #----------------------------------------------------
 # In a Diamond IOC Application, build db files from
