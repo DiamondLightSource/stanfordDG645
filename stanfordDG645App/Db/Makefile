@@ -1,5 +1,11 @@
 TOP=../..
 include $(TOP)/configure/CONFIG
+
+# The templates use UDFS, which does not exist before base 3.15, and make does
+# not check them, so without this an IOC would only fail when loading them
+ifeq ($(EPICS_VERSION).$(EPICS_REVISION),3.14)
+$(error stanfordDG645 needs EPICS base 3.15 or later. On R3.14 use release 1-3)
+endif
 #----------------------------------------
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 
